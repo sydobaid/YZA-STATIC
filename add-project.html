@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YZA - Add Project</title>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="Images/Logo/favicon_io/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Font Awesome icons CDN -->
+    <script
+      src="https://kit.fontawesome.com/2c799a2d2a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- External Stylesheets -->
+    <!-- For loader -->
+    <link rel="stylesheet" href="css/loader.css" />
+    <!-- External Css -->
+    <link rel="stylesheet" href="css/add-project.css" />
+  </head>
+  <body>
+    <!-- Loader section -->
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <!-- MAIN CODE -->
+   
+      <div id="mySidebar" class="sidebar">
+        <div class="admin-div">
+          <a href="#" class="admin-icon-link"><i class="material-icons">account_circle</i><span class="icon-text">Admin</span></a><br>
+        </div>
+        <div class="rest-of-elements">
+        <a href="#"><i class="material-icons">dashboard</i><span class="icon-text">Dashboard</span></a><br>
+        <a href="#"><i class="material-icons">add_circle</i><span class="icon-text">Add Project</span></a><br>
+        <a href="#"><i class="material-icons">library_add</i><span class="icon-text">Add Poster</span></a><br>
+        <!-- <a href="#"><i class="material-icons">monetization_on</i><span class="icon-text"></span>Clients</span></a><br> -->
+        <a href="#"><i class="material-icons">email</i><span class="icon-text"></span>Contact<span></a> 
+        </div>
+        <!-- <hr class="user-underline"> -->
+        
+      </div>
+      
+      <div class="wrapper-dashboard">
+        <div class="top-area">
+          <!-- <a onclick="toggleSideBar()"><i id="left-bar" class="fas fa-bars bars-left"></i></a> -->
+          <button onclick="toggleSideBarBtn()" class="fas fa-bars bars-left" id="left-bar" value="false">
+
+          </button>
+          <button class="btn btn-danger logout-btn">
+            LOGOUT
+          </button>
+        </div>
+        <!-- <div class="top-area">
+          <button class="btn btn-danger logout-btn">
+            LOGOUT
+          </button>
+        </div> -->
+        <!-- <hr class="user-underline-extended"> -->
+        <div id="main">
+          <h2>NEW PROJECT</h2>
+
+          <!-- Form -->
+          <form action="">
+            <div class="form-group">
+              <label for="project-name">Name</label>
+              <input type="text" class="form-control" id="project-name" placeholder="Mr Joe's House">
+            </div>
+            <div class="form-group">
+              <label for="project-description">Description</label>
+              <textarea class="form-control" id="project-description" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="project-status">Status</label>
+              <select class="form-control" id="project-status">
+                <option value="completed">Completed</option>
+                <option value="incompleted">Incompleted</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="project-image">Image</label>
+              <input type="file" class="form-control-file" id="project-image">
+            </div>
+            <div class="form-group button-div">
+              <button type="button" class="btn btn-primary btn-submit">Add Project</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+      
+    <!-- MAIN CODE ENDS -->
+
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Loader.js -->
+    <script type="text/javascript" src="js/loader.js"></script>
+
+    <!-- Sidebar.js -->
+    <script type="text/javascript" src="js/sidebar.js"></script>
+
+    <!-- BS JS CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

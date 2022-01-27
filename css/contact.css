@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|Poppins:200,300,400,500,600,700|Roboto:300,400,500,700");
+
+
+
+
+/* Common stylings - refactoring */
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+.heading{
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: #222222;
+    line-height: 43px;
+}
+
+.content{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #777777;
+    line-height: 24px;
+}
+
+.align-in-center{
+    text-align: center;
+}
+
+.section-formatting{
+    padding-top: 100px;
+    /* padding-bottom: 50px; */
+}
+h2{
+    font-family: 'Oswald';
+    font-weight: bolder; 
+}
+
+p{
+    font-family: 'Roboto';
+}
+
+h3{
+    font-family: "Oswald";
+}
+
+/* Nav bar */
+
+.navbar{
+    padding: 1.5% 5%;
+}
+
+.logo-size{
+    width: 27px;
+    height: 27px;
+    margin-bottom: 5px;
+}
+
+.company-name{
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-weight: bolder;
+}
+
+.n-l{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+.nav-link{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #222222;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FAB700;
+}
+.d-l-h:hover{
+    background-color: #FAB700;
+}
+
+/* Banner */
+
+.main-heading{
+    font-family: 'Oswald';
+    font-weight: bolder;
+    color: #ffffff;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.dream-highlight{
+    background-color: #FAB700;
+    color: #222222;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+.main-description{
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-weight: lighter;
+    padding: 0 20%;
+    line-height: 1.5;
+}
+/* .container-background-image{
+    background-image: url(../Images/Banner/Banner.png);
+} */
+.banner-text-container{
+    /* margin-top: 15%; */
+    background-image: url(../Images/Banner/home-banner.jpg);
+    
+  /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+  
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+       the content height is greater than the image height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+    
+    padding: 5% 0;
+    text-align: center;
+}
+
+.t-align{
+    text-align: center;
+}
+
+
+
+.shortcut-link{
+    color: #ffffff;
+    text-decoration: none !important;
+    font-family: 'Roboto';
+    font-size: 0.875rem;
+
+    -webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+}
+.shortcut-link:hover{
+    color: #FAB700;
+}
+
+/* Contact-form */
+
+.ct-details{
+    padding: 5%;
+}
+.m-form{
+    padding: 50px;
+}
+
+.contact-details{
+    text-align: center;
+}
+
+.info-item{
+    text-align: left;
+    padding-left: 45px;
+}
+.text-align-right{
+    text-align: right !important;
+}
+
+.info-item h3{
+    font-size: 1rem;
+    font-weight: 600
+}
+
+.info-item p{
+    font-size: 0.875rem;
+}
+
+textarea{
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    height: 148px;
+}
+
+.btn-design{
+    background-color: #FAB700;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+.btn-design:hover{
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #FAB700;
+}
+/* footer */
+
+footer{
+    outline: 1px solid #cce7f3!important;
+    background-color: #222222;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 175px;
+    padding-right: 175px;
+
+}
+.f-about-us h3{
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.f-about-us p{
+    color: #777777;
+    font-size: 0.875rem;
+    text-align: left;
+}
+
+.f-contact-us h3{
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.f-contact-us p{
+    color: #777777;
+    font-size: 0.875rem;
+    text-align: left;
+}
+
+.f-contact-us a{
+    font-family: 'Roboto';
+    color: #FAB700;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+}
+.f-contact-us{
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+
+.f-newsletter h3{
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.f-newsletter p{
+    color: #777777;
+    font-size: 0.875rem;
+    text-align: left;
+}
+
+.footer-credits{
+    padding-top: 85px;
+    display: inline-block;
+}
+
+.footer-credits p{
+    color: #777777;
+    font-size: 0.875rem;
+}
+
+.footer-credits p span{
+    color: #FAB700;
+}
+
+
+.f-newsletter input{
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 40px;
+    border: 1px solid #333333;
+    background: #ffffff;
+    color: #999999;
+    font-size: 0.8125rem;
+    line-height: 40px;
+}
+
+.sub-btn{
+    background: #fab700;
+    color: #222222;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 0px;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+}
+
+input[type="email"]:focus {
+    outline: none
+}
+.footer-credits, footer{
+    text-align: center;
+}
+.footer-credits a{
+    margin: 0px 5px;
+    padding: 0px 8px;
+    color: #ffffff;
+    background: #000000;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:760px){
+  .main-heading{
+      font-size: 2.5rem;
+  }  
+}
+
+@media only screen and (max-width:770px){
+    .summary-detail{
+        padding: 15px 40px;
+    }
+    .colored-section .summary-detail:first-of-type{
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    footer{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .f-contact-us a{
+        font-size: 0.875rem;
+    }
+    .footer-credits{
+       text-align: center; 
+    }
+    .footer-credits a{
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        padding: 1.5% 1.5%;
+    }
+    .main-description{  
+        font-size: 14px;
+    }
+  }
+
+
+  @media only screen and (max-width:770px){
+      .btn-design{
+          margin-top: 25px;
+      }
+  }
+/*
+learn meaning of
+.sub-btn {
+  background: #fab700;
+  color: #222222;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 0px;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  position: absolute;
+  right: 2px;
+  border-radius: 50%;
+  top: 2px;
+}
+
+<div class="input-group d-flex flex-row">
+    <input name="EMAIL" placeholder="Your email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+    <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+</div>
+
+*/

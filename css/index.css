@@ -1,0 +1,593 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|Poppins:200,300,400,500,600,700|Roboto:300,400,500,700");
+
+
+
+
+/* Common stylings - refactoring */
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+.heading{
+    font-size: 2.25rem;
+    font-weight: 500;
+    color: #222222;
+    line-height: 43px;
+}
+
+.content{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #777777;
+    line-height: 24px;
+}
+
+.align-in-center{
+    text-align: center;
+}
+
+.section-formatting{
+    padding-top: 100px;
+    /* padding-bottom: 50px; */
+}
+h2{
+    font-family: 'Oswald';
+    font-weight: bolder; 
+}
+
+p{
+    font-family: 'Roboto';
+}
+
+h3{
+    font-family: "Oswald";
+}
+
+
+/* Nav bar */
+
+.navbar{
+    padding: 1.5% 5%;
+}
+
+.logo-size{
+    width: 27px;
+    height: 27px;
+    margin-bottom: 5px;
+}
+
+.company-name{
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+    line-height: 30px;
+    font-weight: bolder;
+}
+
+.n-l{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+.nav-link{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #222222;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #FAB700;
+}
+.d-l-h:hover{
+    background-color: #FAB700;
+}
+
+/* Banner */
+
+.main-heading{
+    font-family: 'Oswald';
+    font-weight: bolder;
+    color: #ffffff;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+.dream-highlight{
+    background-color: #FAB700;
+    color: #222222;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+.main-description{
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-weight: lighter;
+    padding: 0 20%;
+    line-height: 1.5;
+}
+/* .container-background-image{
+    background-image: url(../Images/Banner/Banner.png);
+} */
+.banner-text-container{
+    /* margin-top: 15%; */
+    background-image: url(../Images/Banner/home-banner.jpg);
+    
+  /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+  
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+       the content height is greater than the image height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+    
+    padding: 15% 0;
+    text-align: center;
+}
+
+.t-align{
+    text-align: center;
+}
+.button-style-banner{
+    background:    #222222;
+    border-radius: 11px;
+    padding:       10px 24px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal 18px/1 "Roboto", sans-serif; 
+    text-align:    center;
+}
+
+.button-position-banner{
+    /* position: absolute;
+    left: 50%;
+    top: 75%; */
+    background-color: #222222;
+    color: #FAB700;
+    border: #222222;
+}
+.button-position-banner:hover{
+    color: #222222;
+    background-color: #FAB700;
+}
+
+/* 
+#img_container {
+    position:relative;
+    display:inline-block;
+    text-align:center;
+    border:1px solid red;
+    background-color:gray;
+}
+
+.button {
+    position:absolute;
+    bottom:50%;
+    right:50%;
+    width:100px;
+    height:30px;
+    margin:0px -50px -15px 0px;
+}
+.resize {
+    width:400px;
+    height:500px;
+} */
+
+
+
+/* Offered services section */
+
+
+/* #services{
+    padding-top: 100px;
+    padding-bottom: 50px;
+} 
+This is changed to class - "section-formatting"
+*/
+.row{
+    margin-top: 75px;
+}
+/* .services-container{
+    text-align: center;
+} 
+    This class is changed to "align-in-center"
+*/
+
+.service-card{
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.service-card:hover{
+    box-shadow: 0 4px 20px 0 rgba(126, 123, 123, 0.2);
+    border-radius: 10px;
+}
+
+.service-heading{
+    margin-top: 20px;
+    font-size: 1.25rem;
+    line-height: 24px;
+    text-align: center;
+}
+.service-description{
+    font-size: 0.875rem;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+/* Latest projects */
+
+.row{
+    padding: 0;
+}
+.lp-img-container{
+    padding: 0;
+}
+
+.lp-img-container img{
+    width: 100%;
+    height: 225px;
+    position: relative;
+}
+
+.lp-img-description{
+position: absolute;
+bottom: 0;
+right: 0;
+background-color: #FAB700;
+color: #ffffff;
+font-family: 'Oswald';
+width: 100%;
+height: 225px;
+opacity: 1;
+visibility: hidden;
+-webkit-transition: visibility 0s, opacity 0.8s ease-in; 
+transition: visibility 0s, opacity 0.5s ease-out;
+/* For formatting the text */
+text-align: center;
+padding-top: 60px;
+}
+
+.lp-img-description h3{
+    color: #222222;
+    font-size: 20px;
+    line-height: 2;
+}
+.lp-img-description p{
+    color: #222222;
+    font-size: 14px;
+}
+.second-row-lp{
+    margin-top: 0%;
+}
+
+/* Hover effects */
+
+.lp-img-container:hover{
+    cursor: pointer;
+}
+
+.lp-img-container:hover .lp-img-description{
+    visibility: visible;
+    opacity: 0.8;
+}
+
+/* Team members */
+
+.team-members-row{
+    margin-top: 75px;
+    padding-left: 75px;
+    padding-right: 75px;
+    /* height: calc(100vh - 2rem); */
+    align-items: center;
+    display: flex; 
+    justify-content: space-around; 
+}
+
+.team-card{
+    display: inline-block;
+    position: relative;
+}
+.img-info {
+    position: absolute;
+    background-color: #FAB700;
+    color: #eee;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  /* this part show information on hover */
+.team-card:hover .img-info {
+    opacity: 0.8;
+}
+.team-member-social-icon {
+    margin: 10px;
+}
+
+.img-info a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+.team-member-description{
+    text-align: center;
+}
+.team-member-description h3{
+    margin-top: 25px;
+    font-size: 1.125rem; 
+    color: #222222;  
+}
+.team-member-description p{
+    color: #777777;
+}
+
+
+
+/* Summary Section */
+
+.colored-section{
+    width: 100%;
+    background-color: #FAB700;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.summary-detail{
+    text-align: center;
+    padding: 70px 40px;
+}
+
+.summary-detail h3{
+    font-size: 48px;
+}
+
+.summary-detail p{
+    font-size: 14px;
+}
+
+
+/* Features description */
+
+.feature-card{
+    padding: 15px 30px;
+    text-align: center;
+    border: 0.2px solid #EEEEEE;
+    border-radius: 10px;
+}
+
+.feature-card:hover{
+    box-shadow: 0 4px 20px 0 rgba(126, 123, 123, 0.2);
+    border-radius: 10px;
+
+}
+
+.feature-card:hover .feature-heading{
+    color: #FAB700;
+}
+
+.feature-heading{
+    margin-top: 20px;
+    font-size: 1.25rem;
+    line-height: 24px;
+    text-align: left;
+    /* To slowly chnage th color of the font on hover on feature card */
+    -webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+}
+.feature-description{
+    font-size: 0.875rem;
+    line-height: 24px;
+    text-align: left;
+}
+
+
+/* footer */
+
+footer{
+    outline: 1px solid #cce7f3!important;
+    background-color: #222222;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 175px;
+    padding-right: 175px;
+
+}
+.f-about-us h3{
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.f-about-us p{
+    color: #777777;
+    font-size: 0.875rem;
+    text-align: left;
+}
+
+.f-contact-us h3{
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.f-contact-us p{
+    color: #777777;
+    font-size: 0.875rem;
+    text-align: left;
+}
+
+.f-contact-us a{
+    font-family: 'Roboto';
+    color: #FAB700;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+}
+.f-contact-us{
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+
+.f-newsletter h3{
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.f-newsletter p{
+    color: #777777;
+    font-size: 0.875rem;
+    text-align: left;
+}
+
+.footer-credits{
+    padding-top: 85px;
+    display: inline-block;
+}
+
+.footer-credits p{
+    color: #777777;
+    font-size: 0.875rem;
+}
+
+.footer-credits p span{
+    color: #FAB700;
+}
+
+
+.f-newsletter input{
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 40px;
+    border: 1px solid #333333;
+    background: #ffffff;
+    color: #999999;
+    font-size: 0.8125rem;
+    line-height: 40px;
+}
+
+.sub-btn{
+    background: #fab700;
+    color: #222222;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 0px;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+}
+
+input[type="email"]:focus {
+    outline: none
+}
+.footer-credits, footer{
+    text-align: center;
+}
+.footer-credits a{
+    margin: 0px 5px;
+    padding: 0px 8px;
+    color: #ffffff;
+    background: #000000;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width:760px){
+  .main-heading{
+      font-size: 2.5rem;
+  }  
+}
+
+@media only screen and (max-width:770px){
+    .summary-detail{
+        padding: 15px 40px;
+    }
+    .colored-section .summary-detail:first-of-type{
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    footer{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .f-contact-us a{
+        font-size: 0.875rem;
+    }
+    .footer-credits{
+       text-align: center; 
+    }
+    .footer-credits a{
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .navbar{
+        padding: 1.5% 1.5%;
+    }
+    .main-description{  
+        font-size: 14px;
+    }
+  }
+/*
+learn meaning of
+.sub-btn {
+  background: #fab700;
+  color: #222222;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 0px;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  position: absolute;
+  right: 2px;
+  border-radius: 50%;
+  top: 2px;
+}
+
+<div class="input-group d-flex flex-row">
+    <input name="EMAIL" placeholder="Your email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+    <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+</div>
+
+*/
